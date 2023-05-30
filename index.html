@@ -1,185 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Mateaș Mario</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
-</head> 
+	<head>
+		<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+		<script type="importmap">
+		  {
+			"imports": {
+			  "three": "https://cdn.jsdelivr.net/npm/three@0.151.0/build/three.module.js",
+			  "three/examples/jsm/loaders/GLTFLoader": "https://cdn.jsdelivr.net/npm/three@0.151.0/examples/jsm/loaders/GLTFLoader.js"
+			}
+		  }
+		</script>
+		
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
 
-<body>
-    <div class="wrapper mt-lg-5">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <img class="profile" src="assets/images/profile.png" alt="" />
-                <h1 class="name">Mateaș Mario</h1>
-                <h3 class="tagline">Coding projects, tutorials & more</h3>
-            </div><!--//profile-container-->
-            
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: mateasmario@aol.com">Send me an E-Mail</a></li>
-                <li class="website"><i class="fa-solid fa-globe"></i><a href="https://mateasmario.com/" target="_blank">Official Website</a></li>
-                    <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mario-matea%C8%99-b31628209/" target="_blank">LinkedIn Profile</a></li>
-                    <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/mateasmario" target="_blank">GitHub Account</a></li>
-                    <li class="twitter"><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/mateasmario" target="_blank">Twitter Page</a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Projects</h2>
-                <div class="item">
-                    <h4 class="degree">pie</h4>
-                    <h5 class="meta">Lightweight text editor with some third-party features, capable of replacing Notepad.</h5>
-                    <div class="time"><a href="#">Read more</a></div>
-                </div><!--//item-->
-            </div><!--//education-container-->
-            
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Tutorials</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Coming soon <span class="lang-desc">(I promise)</span></li>
-                </ul>
-            </div><!--//interests-->
-            
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Links and references</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Useful resources</li>
-                    <li>Some external tutorials</li>
-                </ul>
-            </div><!--//interests-->
-            
-        </div><!--//sidebar-wrapper-->
-        
-        <div class="main-wrapper">
-            
-            <section class="section summary-section">
-            <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>About me</h2>
-                <div class="summary">
-                    <p>I'm a 21 year old Computer Science student from Romania, currently working as a Java Developer, with a passion for Web Development and also some non-Java frameworks such as .NET's good old Winforms. I started building projects (mainly intended for other devs) that I considered pretty useful, especially because they are free and open source and offer the (most) functionality an equivalent paid service might offer.</p>
-                </div><!--//summary-->
-            </section><!--//section-->
-            
-            <section class="section experiences-section">
-            <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Experience</h2>
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                        <h3 class="job-title">Application Developer</h3>
-                        <div class="time">September 2022 - Present</div>
-                        </div><!--//upper-row-->
-                        <div class="company">IBM - Timișoara, Timiș, România</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Skills developed: COBOL, Oracle Database, Spring Batch, SQLJ, Java, Spring Framework, Amazon Web Services (AWS)</p>  
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                        <h3 class="job-title">Python (Django) Team Lead / Back-end Developer</h3>
-                        <div class="time">March 2021 - September 2022</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Google Developer Student Club, Politehnica University of Timișoara</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Skills developed: Django, Django REST Framework, PyCharm, GitKraken, PostgreSQL, APIs, Project Management, Project Planning, ERD, Python, SQL, GitHub, YouTrack, Scrum, Git, Back-end Web Development</p>  
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                        <h3 class="job-title">System Testing VNI Intern</h3>
-                        <div class="time">August 2021 - August 2022</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Continental Automotive - Timișoara, Timiș, România</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Skills developed: Jenkins, Doxygen, doxyrest, Sphinx, C++, Unit Testing, Integration Testing, Jira, Bluetooth Low Energy</p>  
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-            </section><!--//section-->
-            
-            <section class="section projects-section">
-            <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-certificate"></i></span>Certifications</h2>
-                <div class="intro">
-                </div><!--//intro-->
-                <div class="item">
-                <span class="project-title"><a href="https://www.credly.com/badges/bfeb408a-3daf-4972-b115-367aebc76014/linked_in_profile" target="_blank">AWS Certified Cloud Practitioner</a></span> - <span class="project-tagline"> Issued Nov 2022 by Amazon Web Services (AWS), Expires Nov 2025 </span>
-                    
-                </div><!--//item-->
-                <div class="item">
-                <span class="project-title"><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=47ACD321589B255EB149B8817189E1B8CFD79C9D50D35BB52E861A9D8CBB45A7" target="_blank">Oracle Certified Associate, Java SE 8 Programmer</a></span> - <span class="project-tagline">Issued Oct 2022 by Oracle</span>
-                </div><!--//item-->
-                <div class="item">
-                <span class="project-title"><a href="https://www.credly.com/badges/944cb14b-5e60-484e-8688-eedf4254ded5?source=linked_in_profile" target="_blank">Microsoft Certified: Security, Compliance, and Identity Fundamentals</a></span> - <span class="project-tagline">Issued May 2022 by Microsoft</span>
-                </div><!--//item-->
-                <div class="item">
-                <span class="project-title"><a href="https://courses.edx.org/certificates/2422b80bc77b47a9a24780f9470b9118" target="_blank">CS50's Introduction to Computer Science</a></span> - <span class="project-tagline">Issued Jul 2021 by Harvard University (through edX)</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://www.credly.com/badges/abb70cd8-bffa-4ef4-a9d3-4fec4f21b139?source=linked_in_profile" target="_blank">Microsoft Certified: Azure Fundamentals</a></span> - 
-                    <span class="project-tagline">Issued Mar 2021 by Microsoft</span>
-                </div><!--//item-->
-                <div class="item">
-                <span class="project-title"><a href="#" target="_blank">Deutsches Sprachdiplom der KMK (Erste Stufe - B1)</a></span> - 
-                    <span class="project-tagline">Issued Oct 2016 by Kultusministerkonferenz Deutschland</span>
-                </div><!--//item-->
-            </section><!--//section-->
-            
-            <section class="skills-section section">
-            <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-graduation-cap"></i></span>Education</h2>
-                <div class="skillset">        
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                        <h3 class="job-title">Bachelor's Degree in Computer Science (BCS)</h3>
-                        <div class="time">Sept 2020 - Present</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Politehnica University of Timișoara - Timișoara, Timiș, România</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                        <h3 class="job-title">High School Diploma, Mathematics &amp; Informatics</h3>
-                        <div class="time">Sept 2016 - Jun 2020</div>
-                        </div><!--//upper-row-->
-                        <div class="company">"Ioan Jebelean Theoretical" High School - Sânnicolau-Mare, Timiș, România</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
-                    
-                </div>  
-            </section><!--//skills-section-->
-            
-        </div><!--//main-body-->
-    </div>
- 
-    <footer class="footer">
-        <div class="text-center">
-            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <i class="fa-solid fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
-        
-</body>
-</html> 
-
+			#info {
+				position: absolute;
+				top: 10px;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+				color: #a81920;
+				font-weight: bold;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="info">Score: 0</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
