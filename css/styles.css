@@ -10,9 +10,7 @@ body {
     margin-right: auto;  
     left: 0;
     right: 0;
-    width: 75%;
-    top: 50%;
-    transform: translate(0, -50%);
+    width: 80%;
 }
 
 .box-title {
@@ -20,14 +18,15 @@ body {
     color:rgb(24, 24, 24);
     padding: 0.2vh 1vh 0.2vh 1vh;
     margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 .box-content {
     background-color: white;
     color:rgb(24, 24, 24);
     padding: 0.2vh 1vh 0.2vh 1vh;
-    margin-bottom: 5vh;
-    height: 75vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 .title {
